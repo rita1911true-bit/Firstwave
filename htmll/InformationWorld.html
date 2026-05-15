@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widtg" initial-scale="1.0">
+    <title>ArtsAsterism/情報のセカイ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <body>
+
+        <button class="menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <button class="menu-button" id="menu-btn">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+        </button>
+
+
+        <div class="overlay" id="overlay"></div>
+
+
+        <nav class="side-menu" id="side_menu">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="Nicetomeetyou.html">ごあいさつ</a></li>
+                <li><a href="InformationWorld.html">情報のセカイ</a></li>
+                <li><a href="#">創作のセカイ</a></li>
+            </ul>
+        </nav>
+
+        <nav class="side-menu" id="side-menu">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="Nicetomeetyou.html">ごあいさつ</a></li>
+                <li><a href="Information.html">情報のセカイ</a></li>
+                <li><a href="#">創作のセカイ</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="container">
+            <h1>- World of Information -</h1>
+            <h2>- 情報のセカイ -</h2>
+            <h3>I. 見えなかった進化の過程</h3>
+            <p>インターネットが台頭してからはや数十年。インターネット黎明期から生きる人ならばともかくとして、西暦2000年以降に生まれた人たちは、ITの分野において理解に苦しんだ経験が少なからずおありなのではないでしょうか。最初から完成された、高度な情報端末があった今の10代、20代、そしてこれから情報を学ぶであろう令和に生まれた方たち。ある意味贅沢な環境とも言えますが、ITを学ぶ上では不利とも言えます。進化の過程やそれによる生活の変化を経験できないからです。</p>
+            <h4>II. 手っ取り早い理解の順番</h4>
+            <p>情報のセカイを手っ取り早く理解する秘訣。それは偏りなく全体像から理解していくこと。今の全体像をさらっと見ておく。その次に歴史、といっても最初に何があってどうして今に至るのかを時系列順にかるーく見ていくだけでも大丈夫です。先人の天才さぶりに舌を巻きながら、いかにして世界に受け入れられてきたか。世界中がこぞって熱狂したコンピュータサイエンス。歴史と聞いて身構える必要はありません。数千年に及ぶ歴史に比べれば情報の歴史なんてたった数十年のことです。そのたった数十年の爆発的な進化の過程を見れば、だいたいなんでいまのようなセカイになっているのかなんとなく理解できるはずです。</p>
+        </div>
+
+
+        <script>
+            const btn = document.querySelector('#menu-btn');
+            const menu = document.querySelector('#side-menu');
+            const mask = document.querySelector('#overlay');
+
+            function toggleMenu() {
+                btn.classList.toggle('open');
+                menu.classList.toggle('open');
+                mask.classList.toggle('open');
+            }
+
+            btn.addEventListener('click', toggleMenu);
+            mask.addEventListener('click', toggleMenu);
+
+        </script>
+
+    </body>
+
+</html>

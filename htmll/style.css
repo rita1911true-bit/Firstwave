@@ -1,0 +1,135 @@
+h1 {
+    color: white;
+    font-size: 48px;
+    text-align: center;
+}
+h2 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+h3 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+h4 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+p {
+    color: white;
+    font-size: 16px;
+}
+body {
+    background-image: url("IMG_2043.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    font-family: "Yu Mincho", "Hiragino Mincho ProN",sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    }
+.black-bg {
+    background-color: #0c0c0c;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    line-height: 1.8;
+    border-radius: 8px;
+    font-family: "serif";
+}
+
+.menu-button {
+    position: fixed; /*スクロールしても位置が変わらず固定される。大事。*/
+    top: 20px;
+    left: 20px; /*二次元的に、二方向からの距離が分かれば座標を特定できるため上と左だけわかれば指定できる。*/
+    z-index: 100; /*どの要素よりも上に表示するため、100が一番上、０が一番画面下*/
+
+    width: 50px; /*ボタン自体の幅*/
+    height: 50px; /*ボタン自体の高さ。widthとheightをそろえると正方形になる。*/
+    background-color: #0c0c0c;
+    border: none; /*ボタンに自動でついてくる枠線を消す*/
+    border-radius: 5px; /*枠の四隅の角を丸く削る。border=枠、radius=半径*/
+    cursor: pointer; /*マウスが乗るとカーソルが変わる*/
+
+    display: flex; /*中に入る要素をディスプレイするために、そしてflexで指定できるよう自由にする*/
+    flex-direction: column; /*中の要素を縦に並べる。column=縦や支柱を意味する*/
+    justify-content: space-around; /*中の要素をすべての空白を均等にそろえて配置。justify=整列、政党制、均等、around=周り*/
+    align-items: center; /*中の要素を中央ぞろえにする。上下ではなく左右で。align=整列*/
+    padding: 10px; /*ボタン内側の余白。paddingは上下左右の余白のこと。*/
+
+}
+
+.menu-button span {
+    display: block; /*ブロックを表示する。これは下のコードで高さと幅を調整し線にする*/
+    width: 30px; 
+    height: 3px;
+    background-color: white; /*白い線にする。spanは３つあるので三本戦になる。*/
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /*初期位置を画面外に隠しておく。後からスライドインする。*/
+    width: 250px;
+    height: 100%; /*高さだけを画面いっぱい*/
+    background-color: #000c2e;
+    transition: 0.3s; /*スライドインするアニメーション時間*/
+    padding-top: 80px; /*サイドメニューの上に余白を作りメニューボタンと重ならないようにする*/
+    z-index: 99; /*ボタンが画面最上位100の位置にあるので、その下の99にすることでボタン以下コンテンツ以上の位置にする。*/
+}
+
+.side-menu ul { list-style: none; padding: 0; }
+.side-menu ul a {
+    display: block;
+    color: white;
+    padding: 20px;
+    text-decoration: none; /*aタグの下に来る下線を消す*/
+}
+
+.side-menu.open {
+    left: 0; /*マイナス＝画面外だったサイドメニューの左端を０の位置まで持ってくる*/
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /*RGBAのAはアルファ、透明度を表し、0が完全透明、１が完全不透明*/
+    z-index: 98; /*ボタンが100、サイドメニューが99なのでその一つ下に。*/
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.overlay.open {
+    opacity: 1; /*不透明にする*/
+    visibility: visible; /*表示する*/
+}
+
+.menu-button span {
+    transition: 0.3s;
+    }
+
+.menu-button.open .line1 {
+    transform: translateY(13px) rotate(45deg); /*下に下げて（Y座標が下がる）45度回転*/
+}
+.menu-button.open .line2 {
+    opacity: 0; /*真ん中の線を消す*/
+}
+.menu-button.open .line3 {
+    transform: translateY(-13px) rotate(-45deg); /*上に上げて（Y座標が上がる）-45度回転*/
+}
+
