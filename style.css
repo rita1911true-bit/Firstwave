@@ -29,7 +29,7 @@ body {
     background-position: center;
     background-size: cover;
 
-    font-family: "Yu Mincho", sans-serif;
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", sans-serif;
 }
 
 .container {
