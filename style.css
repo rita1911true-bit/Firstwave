@@ -23,8 +23,7 @@ p {
     font-size: 16px;
 }
 body {
-    /*background-image: url("IMG_2043.jpeg");*/
-    background-color: black;
+    background-image: url("IMG_2043.jpeg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
