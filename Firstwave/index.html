@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ホーム</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body> 
+	<button class="menu-button"> 
+		<span></span>
+		<span></span>
+		<span></span>
+	</button>
+
+	
+	<nav class="side-menu" id="side_menu"> <!--Navigation, サイドメニューを作る大きなハコ-->
+		<ul> <!--Unordered List, 順不同、つまり自由なリスト-->
+			<li><a href="index.html">ホーム</a></li> <!--Hyper Reference,クリックで飛ぶ。-->
+			<li><a href="Nicetomeetyou.html">ごあいさつ</a></li>
+			<li><a href="InformationWorld.html">情報のセカイ</a></li>
+			<li><a href="#">創作のセカイ</a></li>
+		</ul>
+	</nav>
+
+
+
+	<div class="container">
+		<h1>Arts Asterism</h1>
+		<h2>- Created by ??? -</h2>
+			
+	</div>
+
+
+	<div class="overlay" id="overlay"></div>
+
+	<button class="menu-button" id="menu-btn">
+		<span class="line1"></span>
+		<span class="line2"></span>
+		<span class="line3"></span>
+	</button>
+
+
+	<nav class="side-menu" id="side-menu">
+		<ul>
+			<li><a href="index.html">ホーム</a></li>
+			<li><a href="Nicetomeetyou.html">ごあいさつ</a></li>
+			<li><a href="InformationWorld.html">情報のセカイ</a></li>
+			<li><a href="#">創作のセカイ</a></li>
+		</ul>
+	</nav>
+
+
+	<script>
+		const btn = document.querySelector('#menu-btn');
+		const menu = document.querySelector('#side-menu');
+		const mask = document.querySelector('#overlay');
+
+		function toggleMenu() {
+			btn.classList.toggle('open');
+			menu.classList.toggle('open');
+			mask.classList.toggle('open');
+		}
+
+		btn.addEventListener('click', toggleMenu);
+		mask.addEventListener('click', toggleMenu);
+	</script>
+
+</body>
+</html>
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>ごあいさつ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <body>
+
+        <button class="menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <button class="menu-button" id="menu-btn">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+        </button>
+
+        <div class="overlay" id="overlay"></div>
+        
+        <nav class="side-menu" id="side_menu">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="Nicetomeetyou.html">ごあいさつ</a></li>
+                <li><a href="InformationWorld.html">情報のセカイ</a></li>
+                <li><a href="#">創作のセカイ</a></li>
+            </ul>
+        </nav>
+
+        <nav class="side-menu" id="side-menu">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="Nicetomeetyou.html">ごあいさつ</a></li>
+                <li><a href="InformationWorld.html">情報のセカイ</a></li>
+                <li><a href="#">創作のセカイ</a></li>
+            </ul>
+        </nav>
+        
+        <div class="container">
+            <h1>Nice to meet you!</h1>
+            <h2>ごあいさつ</h2>
+            <p>はじめまして！無数のサイトがある中、本サイトにお越しくださりありがとうございます！本を開くと、たくさんの本がある中、この本を手に取ってくれてありがとう！という文言をよく目にしますが、実は言ってみたい挨拶の一つだったんですよね。とりとめのないことを書いてすみません。それでは本サイトのご案内は、下の案内人に任せて私は失礼したいと思います。このサイトがなにかのお役に立てることを願っています。簡単ではありますが、これをもって挨拶とさせていただきたく思います。ここまで読んでくださりありがとうございました。</p>
+            <h3>このサイトのご案内</h3>
+            <p>このサイトは主に「情報の知識」と「管理人の創作活動」の二つがご覧になれます。「情報の知識」は管理人が”情報”を学ぶ上で体系的に学べず理解に苦しんでいた経験から、全体像から体系的に知識を学べるようにと思い、作っております。管理人の手に込んだノートです。<br>二つ目に創作活動ですが、これはそのまま管理人の趣味です。へぇ、この日とこんなことやってんだ。くらいの感覚でご覧ください。</p>
+
+        </div>
+
+
+        <script>
+            const btn = document.querySelector('#menu-btn');
+            const menu = document.querySelector('#side-menu');
+            const mask = document.querySelector('#overlay');
+            
+            function toggleMenu() {
+                btn.classList.toggle('open');
+                menu.classList.toggle('open');
+                mask.classList.toggle('open');
+            }
+
+            btn.addEventListener('click', toggleMenu);
+            mask.addEventListener('click', toggleMenu);
+        </script>
+
+        
+    </body>
+</html>

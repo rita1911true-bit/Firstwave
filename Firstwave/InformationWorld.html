@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <title>情報のセカイ</title>
+    <link rel="stylesheet" href="styleII.css">
+</head>
+
+    <body>
+
+        <button class="menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <button class="menu-button" id="menu-btn">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+        </button>
+
+
+        <div class="overlay" id="overlay"></div>
+
+
+        <nav class="side-menu" id="side_menu">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="Nicetomeetyou.html">ごあいさつ</a></li>
+                <li><a href="InformationWorld.html">情報のセカイ</a></li>
+                <li><a href="#">創作のセカイ</a></li>
+            </ul>
+        </nav>
+
+        <nav class="side-menu" id="side-menu">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="Nicetomeetyou.html">ごあいさつ</a></li>
+                <li><a href="Information.html">情報のセカイ</a></li>
+                <li><a href="#">創作のセカイ</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="container">
+            <h1 class="IWh1">- The Information -</h1>
+            <p>The secret to quickly understanding the information set. It is to understand the whole picture without bias. Let's take a quick look at the overall picture of the present. Next, we will look at history, or even history, in chronological order to see what happened first and why it got to where it is now. While wrapping your tongue around the genius of your predecessors, how has it been accepted by the world? Computer science was a passion for all over the world. If you look at the explosive evolution process of just a few decades, you should be able to understand why it has become the Sekai it is now.</p>
+            <p class="IWp2"><a href="platform.html">情報のプラットフォーム</a></p>    
+        </div>
+
+
+        <script>
+            const btn = document.querySelector('#menu-btn');
+            const menu = document.querySelector('#side-menu');
+            const mask = document.querySelector('#overlay');
+
+            function toggleMenu() {
+                btn.classList.toggle('open');
+                menu.classList.toggle('open');
+                mask.classList.toggle('open');
+            }
+
+            btn.addEventListener('click', toggleMenu);
+            mask.addEventListener('click', toggleMenu);
+
+        </script>
+
+    </body>
+
+</html>

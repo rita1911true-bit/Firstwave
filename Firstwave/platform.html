@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <title>プラットフォーム</title>
+        <link rel="stylesheet" href="styleII.css">
+    </head>
+    
+    <body>
+
+        <button class="menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <button class="menu-button" id="menu-btn">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+        </button>
+
+
+        <nav class="side-menu" id="side_menu">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="Nicetomeetyou.html">ごあいさつ</a></li>
+                <li><a href="InformationWorld">情報のセカイ</a></li>
+                <li><a href="#">創作のセカイ</a></li>
+            </ul>
+        </nav>
+
+        <nav class="side-menu" id="side-menu">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="Nicetomeetyou.html">ごあいさつ</a></li>
+                <li><a href="InformationWorld">情報のセカイ</a></li>
+                <li><a href="#">創作のセカイ</a></li>
+            </ul>
+        </nav>
+
+
+
+        <div class="overlay" id="overlay"></div>
+
+
+
+
+
+        <div class="container">
+            <h1>- THE PLATFORM -</h1>
+            
+            <h2>0. Prologue</h2>
+            <a href="Overrallofinternet.html">インターネットの全体像<br></a>
+            <h3>1. Hardware</h3>
+            <a href="The13RoutServer">世界13台のルートサーバ</a>
+            <h4>2. Software</h4>
+            <a href="Whatishtml.html">HTMLとはなにか<br></a>
+            
+            <p>Speaking of residents of World of information (programmers, SEs, etc.), many of you may have the impression that you are typing something on a black background, like this site. Why do we have such an impression? It was due to something called CUI. The user interface has become a relic of the past for the general public and is now the exclusive patent of engineers. CUI? What is that? If you have become one, please try moving on. Surprisingly simple information Sekai is waiting for you.</p>
+            <p>情報のセカイの住人（プログラマやSEさんなど）といえば、このサイトのような、黒い背景になにやら得体のしれぬ文字を打っている、そんな印象をお持ちの方も多いのではないでしょうか。その印象はある意味正しいといえるでしょう。なぜ我々はそのような印象を抱くのか。それは、ＣＵＩというものに起因していました。一般向けとしては過去の遺物となり、いまやエンジニアたちの専売特許となったユーザインターフェース。ゆえに我々は情報のセカイにおけるプロフェッショナルでクラシカルなイメージとして黒背景に文字、を連想するのです。ＣＵＩ？なんだそれは？となった方はぜひ、この先に進んでみてください。意外にシンプルな情報のセカイがあなたを待っています。</p>
+        </div>
+
+
+
+
+        <script>
+            const btn = document.querySelector('#menu-btn');
+            const menu = document.querySelector('#side-menu');
+            const mask = document.querySelector('#overlay');
+
+            function toggleMenu() {
+                btn.classList.toggle('open');
+                menu.classList.toggle('open');
+                mask.classList.toggle('open');
+            }
+
+            btn.addEventListener('click', toggleMenu);
+            mask.addEventListener('click', toggleMenu);
+        </script>
+
+
+
+    </body>
+
+</html>

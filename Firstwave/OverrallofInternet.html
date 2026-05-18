@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <title>インターネットの全体像/情報のセカイ/Arts Asterism</title>
+        <link rel="stylesheet" href="styleII.css">
+    </head>
+
+    <body>
+        <button class="menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <button class="menu-button" id="menu-btn">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+        </button>
+
+
+
+        <nav class="side-menu" id="side-menu">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="Nicetomeenyou">ごあいさつ</a></li>
+                <li><a href="InformationWorld.html">情報のセカイ</a></li>
+                <li><a href="#">創作のセカイ</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="overlay" id="overlay"></div>
+
+        
+
+
+        <div class="container">
+            <h1>インターネットの全体像</h1>
+            <h2>CHAPTER 01 INTERNET</h2>
+            
+            <p>インターネットとは、ふわっとした概念ではありません。その実体、つまりインターネットとは、世界中のコンピュータが接続されたもの、なのです。つまりあなたのラップトップも、スマートフォンも、末端ではありますがインターネットを構成する一部といえます。末端、つまりインターネットというあみだくじの、一番下につながっている部分です。インターネットの末端、だからあなたの手のひらサイズのコンピュータを端末というのです。英語では、端末をターミナルといい、その使用者、つまり我々をエンドユーザといいます。<br></p>
+            <p>さてインターネットと似た言葉に、ネットワークという言葉を聞いたことがあるのではないでしょうか。ネットワークとは複数のコンピュータが相互につながっている状態、そのものを指します。これを世界規模でやったのがインターネットというわけですね。しかしネットワークは必ずしもインターネットではありません。どういうことか？たとえば学校内や社内のコンピュータだけが接続されたネットワーク。これらは外部とはつながっていません。イメージとしては、世界中の人たちが互いに手をつなぐなか、少し離れたところで１０人だけの輪になって手をつないでいるようなイメージです。</p>
+            <p>少し寂しいですが、かわりに誰にも知られず、10人だけのナイショ話ができますね。これが家やコンビニなど小さな範囲ならLAN(Local Area Network)と呼ばれます。そして工場や大企業など大きな場所なら小さなLANを何個もつないだ、WAN（Wide Area Network)と呼ばれます。</p>
+            <p>さて、勘の鋭い方は気づきましたね。あれれ、おかしいぞ。うちにもLANがあるけど、インターネットにつながっている、と。鋭いですね。鋭すぎて先端恐怖症の方がおびえていますよ？このLANだけでつながっている端末を、インターネットにもつないであげるのが、ルータ、なのです。このルータさんは非常に優秀で有能なのですが、それはまた別の機会にでも。</p>
+        </div> 
+
+
+
+        <script>
+            const btn = document.querySelector('#menu-btn');
+            const menu = document.querySelector('#side-menu');
+            const mask = document.querySelector('#overlay');
+
+            function toggleMenu() {
+                btn.classList.toggle('open');
+                menu.classList.toggle('open');
+                mask.classList.toggle('open');
+            }
+
+            btn.addEventListener('click', toggleMenu);
+            mask.addEventListener('click', toggleMenu);
+
+        </script>
+
+
+        
+
+    </body>
+
+</html>
