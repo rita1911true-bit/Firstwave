@@ -1,41 +1,61 @@
 h1 {
-    color: white;
+    color: #00ff00;
     font-size: 48px;
     text-align: center;
 }
+
 h2 {
-    color: white;
+    color: #00ff00;
     font-size: 30px;
-    text-align: center;
+
 }
+
 h3 {
-    color: white;
+    color: #00ff00;
     font-size: 30px;
-    text-align: center;
+
 }
+
 h4 {
-    color: white;
+    color: #00ff00;
     font-size: 30px;
-    text-align: center;
+
 }
+
 p {
-    color: white;
-    font-size: 16px;
+    color: #00ff00;
+    font-size: 18px;
 }
 
 a {
-    color: white;
+    color: #00ff00;
+    font-size: 18px;
+    text-align: center;
 }
 
+
+.IWh1 {
+    font-size: 64px;
+}
+
+.IWp2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
 body {
-    background-image: url("IMG_2043.jpeg");
+    background-color: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-
-    font-family: "Yu Mincho", sans-serif;
+    text-shadow: 0 0 5px #00ff00;
+    font-family: "Courier New", "monospace";
 }
+
+
 
 .container {
     max-width: 900px;
@@ -43,6 +63,7 @@ body {
     margin-right: auto;
     padding: 0 20px;
     }
+
 .black-bg {
     background-color: #0c0c0c;
     color: white;
@@ -78,7 +99,7 @@ body {
     display: block; /*ブロックを表示する。これは下のコードで高さと幅を調整し線にする*/
     width: 30px; 
     height: 3px;
-    background-color: white; /*白い線にする。spanは３つあるので三本戦になる。*/
+    background-color: #00ff00; /*白い線にする。spanは３つあるので三本戦になる。*/
 }
 
 .side-menu {
@@ -87,7 +108,7 @@ body {
     left: -250px; /*初期位置を画面外に隠しておく。後からスライドインする。*/
     width: 250px;
     height: 100%; /*高さだけを画面いっぱい*/
-    background-color: #000c2e;
+    background-color: #000000;
     transition: 0.3s; /*スライドインするアニメーション時間*/
     padding-top: 80px; /*サイドメニューの上に余白を作りメニューボタンと重ならないようにする*/
     z-index: 99; /*ボタンが画面最上位100の位置にあるので、その下の99にすることでボタン以下コンテンツ以上の位置にする。*/
@@ -96,7 +117,7 @@ body {
 .side-menu ul { list-style: none; padding: 0; }
 .side-menu ul a {
     display: block;
-    color: white;
+    color: #00ff00;
     padding: 20px;
     text-decoration: none; /*aタグの下に来る下線を消す*/
 }
@@ -137,4 +158,3 @@ body {
 .menu-button.open .line3 {
     transform: translateY(-13px) rotate(-45deg); /*上に上げて（Y座標が上がる）-45度回転*/
 }
-

@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HTMLとはなにか</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styleII.css">
 </head>
 
 <body> 
@@ -15,23 +15,24 @@
 		<span></span>
 	</button>
 
-	
-	<nav class="side-menu" id="side_menu"> <!--Navigation, サイドメニューを作る大きなハコ-->
-		<ul> <!--Unordered List, 順不同、つまり自由なリスト-->
-			<li><a href="index.html">ホーム</a></li> <!--Hyper Reference,クリックで飛ぶ。-->
-			<li><a href="First.html">ごあいさつ</a></li>
-			<li><a href="#">情報のセカイ</a></li>
-			<li><a href="#">創作のセカイ</a></li>
-		</ul>
-	</nav>
+
+
+        <nav class="side-menu" id="side-menu">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="Nicetomeetyou.html">ごあいさつ</a></li>
+                <li><a href="InformationWorld">情報のセカイ</a></li>
+                <li><a href="#">創作のセカイ</a></li>
+            </ul>
+        </nav>
 
 
 
 	<div class="container">
 		<h1>I. What is the HTML</h1>
-		<h2>- 第一章 HTMLの基本 -</h2>
+		<h2>- CHAPTER 01 BASIC_HTML -</h2>
 			<p>HTMLは正式名称Hyper Text Markup Languageの略称である。よくセットで語られるものにCSS-Cascading Style Sheets-がある。前者は文章や構造を、後者は文字のデザインやレイアウトなど装飾を担当する。よって両者は組み合わせで、WEBページを構成している。</p>
-		<h3>- 第二章 HTMLのおまじない -</h3>
+		<h3>- CHAPTER 02 HEAD_HTML -</h3>
 			<p>ここからは実装編。何も難しいことはない。下はコピペしたらいいが一応解説する。</p>
 
 			<p class="black-bg">
@@ -46,7 +47,7 @@
 
 			<p>まずは、&lt!DOCTYPE html&gtと打とう。これはいまからHTMLはじめまーす。という宣言だ。それに加えて大体のブラウザで開いても、レイアウトがくずれないようにしてくれるいい人だ。次の行には&lthtml lang="ja"&gt。義務教育終了しているなら察せるだろうが日本語を設定だ。その次の行には、&lthead&gt、頭だ。その次の行は、&ltmeta charset="UTF-8">。UTF-8は文字コードというもので、その中でも一番有名なもの。文字と数字の表だと思えばいい。次の行は&ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gtと打とう。何も考えずに打てばいい。ページを表示するときにサイズ調整をしてくれるありがたい人である。ラストスパート。&lttitle&gtタイトル&lt/title&gt。ページの名前だ。「タイトル」を書き換えよう。最後に、&lt/head&gtだ。お疲れ様。これでおまじないは完了だ。</p>
 
-		<h4>- 第三章 -</h4>
+		<h4>- CHAPTER 03 BODY_HTML -</h4>
 	</div>
 
 
@@ -57,16 +58,6 @@
 		<span class="line2"></span>
 		<span class="line3"></span>
 	</button>
-
-
-	<nav class="side-menu" id="side-menu">
-		<ul>
-			<li><a href="index.html">ホーム</a></li>
-			<li><a href="First.html">ごあいさつ</a></li>
-			<li><a href="#">情報のセカイ</a></li>
-			<li><a href="#">創作のセカイ</a></li>
-		</ul>
-	</nav>
 
 
 	<script>
